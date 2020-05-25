@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pl">
 
 <head>
@@ -34,16 +33,21 @@
     <header class="top-header lightgrey-background">
         <div class="header-container">
             <div class="header-left">
-                <a href="index.html"><img id="szop" src="assets/images/menulogo.png"
+                <a href="index.html"><img id="szop-logo" src="assets/images/menulogo.png"
                         srcset="assets/images/menulogo.png 480w, assets/images/menulogo@2x.png 800w, assets/images/menulogo@3x.png 1200w"
                         alt="logo"></a>
             </div>
             <div class="header-right">
                 <p>O NAS</p>
                 <a href="sklep.html"><button>DLA SKLEPÓW</button></a>
-                <a href="#"><img id="fb" src="assets/images/fb.png"
+                <a href="#">
+                    <img id="fb" src="assets/images/fb.png"
                         srcset="assets/images/fb2x.png 480w, assets/images/fb3x.png 800w, assets/images/fb.png 1200w"
-                        alt="facebook"></a>
+                        alt="facebook">
+                </a>
+            </div>
+            <div id="hamburger">
+                <img src="assets/images/fb.png" />
             </div>
         </div>
     </header>
@@ -67,6 +71,47 @@
             <p class="section-header how-it-works-header">
                 Jak to działa?
             </p>
+            <div class="carrousel">
+                <input type="radio" name="slides" id="radio-1" checked>
+                <input type="radio" name="slides" id="radio-2">
+                <input type="radio" name="slides" id="radio-3">
+                <ul class="slides">
+                    <li class="slide">
+                        <img src="assets/images/hiw1.png"
+                            srcset="assets/images/hiw1.png 480w, assets/images/hiw1@2x.png 800w, assets/images/hiw1@3x.png 1200w"
+                            alt="obrazek z instrukcją" id="how-it-works-img1-mobile" />
+                        <div class="number-container1">
+                            <div class="number" id="number1-mobile">1</div>
+                            <p class="dot-description">Zamów produkty <br />z lokalnego sklepu przez aplikację Szopuj!
+                            </p>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <img src="assets/images/hiw2.png"
+                            srcset="assets/images/hiw2.png 480w, assets/images/hiw2@2x.png 800w, assets/images/hiw2@3x.png 1200w"
+                            alt="obrazek z instrukcją" id="how-it-works-img2-mobile" />
+                        <div class="number-container2">
+                            <div class="number" id="number2-mobile">2</div>
+                            <p class="dot-description">Wybierz wygodny <br />dla Ciebie termin odbioru</p>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <img src="assets/images/hiw3.png"
+                            srcset="assets/images/hiw3.png 480w, assets/images/hiw3@2x.png 800w,assets/images/hiw3@3x.png 1200w"
+                            alt="obrazek z instrukcją" id="how-it-works-img3-mobile" />
+                        <div class="number-container3">
+                            <div class="number" id="number3-mobile">3</div>
+                            <p class="dot-description">Odbierz zapakowane zakupy<br /> przy kasie bez dodatkowych<br />
+                                kosztów!</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="slidesNavigation">
+                    <label for="radio-1" id="dotForRadio-1"></label>
+                    <label for="radio-2" id="dotForRadio-2"></label>
+                    <label for="radio-3" id="dotForRadio-3"></label>
+                </div>
+            </div>
             <div class="horizontal-images-container">
                 <img src="assets/images/hiw1.png"
                     srcset="assets/images/hiw1.png 480w, assets/images/hiw1@2x.png 800w, assets/images/hiw1@3x.png 1200w"

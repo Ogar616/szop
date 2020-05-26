@@ -15,7 +15,7 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  overflow: hiden;
+  overflow: hidden;
 }
 .content-container {
   margin: 0 auto;
@@ -29,6 +29,9 @@ p {
 }
 .wide {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .flex-center {
   display: flex;
@@ -92,7 +95,7 @@ p {
 .mobile-menu-hamburger-container img {
   width: 20px;
   height: 14px;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 .top-header {
   border-bottom: 1px solid rgb(199 206 214);
@@ -130,11 +133,16 @@ p {
   max-width: 179px;
 }
 #hamburger {
-  margin: 26px 30px 0 20px;
+  margin: 6px 30px 0 20px;
 }
 #hamburger img {
   width: 20px;
   height: 14px;
+}
+#hamburger-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header-right {
   display: none;
@@ -209,6 +217,7 @@ section#app .section-description {
 .mobile-description {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   padding: 54px 0 0 5px;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -218,6 +227,7 @@ section#app .section-description {
   margin-bottom: 20px;
   margin-left: -10px;
 }
+
 .mobile-description .section-description {
   padding-left: 0;
 }
@@ -234,13 +244,19 @@ section#app .section-description {
   width: 200px;
   padding: 0 87px;
 }
+.mobile-description-item:nth-of-type(2) .section-header,
+.mobile-description-item:nth-of-type(3) .section-header,
+.mobile-description-item:nth-of-type(4) .section-header {
+  margin-top: -70px;
+}
 #mobile-description-item-1 {
   padding-left: 0;
+  margin-top: -75px;
 }
 #mobile-description-img2,
 #mobile-description-img3,
 #mobile-description-img4 {
-  margin-top: 152px;
+  margin-top: 112px;
 }
 
 section#how-it-works {
@@ -354,6 +370,7 @@ section#how-it-works {
 }
 section#asortiment .section-header {
   width: 366px;
+  margin-top: 210px;
 }
 section#get-it .section-description {
   width: 357px;
@@ -522,6 +539,7 @@ section#shop-join .common-section-half {
 }
 section#shop-join .section-header {
   margin-top: 155px;
+  margin-left: 10px;
 }
 section#shop-join img {
   width: 360px;
@@ -658,6 +676,9 @@ section#contact img {
 }
 
 @media (min-width: 900px) {
+  .main-container {
+    margin-right: -50px;
+  }
   p {
     text-align: left;
   }
@@ -671,13 +692,14 @@ section#contact img {
     top: 0;
     width: 100%;
     height: 85px;
-    padding: 5px 0 5px;
+    padding-top: 5px;
+    margin-left: 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
   .section-content {
-    padding: 170px 10px 0 15px;
+    padding-top: 170px;
   }
   .header-container {
     width: 1055px;
@@ -685,6 +707,7 @@ section#contact img {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    /* margin-right: 95px; */
   }
   .top-header #szop-logo {
     width: 179px;
@@ -757,7 +780,6 @@ section#contact img {
     font-family: "Roboto";
     font-weight: 600;
     margin-bottom: 40px;
-    padding: 0 7px;
   }
   .section-description {
     font-size: 20px;
@@ -786,6 +808,13 @@ section#contact img {
   #img-app {
     position: relative;
     top: -330px;
+    left: 150px;
+    width: 542px;
+    height: 553;
+  }
+  #img-app-shop {
+    position: relative;
+    top: 330px;
     left: 170px;
     width: 542px;
     height: 553;
@@ -803,7 +832,6 @@ section#contact img {
     flex-direction: column;
     margin-top: 200px;
     height: 478px;
-    padding-left: 15px;
   }
   .how-it-works-header {
     margin-bottom: 126px;
@@ -888,8 +916,8 @@ section#contact img {
     padding-left: 15px;
   }
   .common-section-small-part .section-header {
-    margin-top: 190px;
-    padding-left: 13px;
+    margin-top: 215px;
+    padding-left: 5px;
   }
   .common-section-big-half {
     width: 746px;
@@ -903,7 +931,7 @@ section#contact img {
     margin-left: 13px;
   }
   .common-section-right-text {
-    margin-left: 145px;
+    margin-left: 135px;
     margin-top: -50px;
   }
   .common-section-right-text .section-description {
@@ -919,8 +947,14 @@ section#contact img {
     margin-top: 70px;
     margin-left: 12px;
   }
+  section#asortiment {
+    padding: 0;
+  }
   section#asortiment .section-header {
     width: 366px;
+  }
+  section#get-it .section-header {
+    margin-top: 200px;
   }
   section#get-it .section-description {
     width: 357px;
@@ -935,6 +969,7 @@ section#contact img {
   .newsletter-section {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     height: 300px;
   }
   .newsletter-section .container {
@@ -944,14 +979,15 @@ section#contact img {
   .newsletter-section-image {
     width: 229px;
     height: 158px;
-    margin: 81px 55px 61px -145px;
+    margin-top: 55px;
+    margin-left: 40px;
+    margin-right: 55px;
   }
   .newsletter-section-header {
     color: rgb(0 99 114);
     font-size: 30px;
     font-family: "Roboto";
     font-weight: bold;
-    margin-top: 0;
     margin-bottom: 10px;
   }
   .newsletter-section-description {
@@ -995,10 +1031,12 @@ section#contact img {
   section#join .section-header {
     margin-top: 17px;
     margin-bottom: 20px;
+    margin-right: 28px;
   }
   section#join .section-description {
     width: 394px;
     margin-bottom: 40px;
+    margin-right: 28px;
   }
   section#join button {
     width: 240px;
@@ -1008,12 +1046,14 @@ section#contact img {
     border-radius: 36px;
     font-size: 14px;
     letter-spacing: 0.5px;
+    margin-right: 28px;
   }
 
   section#join img {
     width: 240px;
     height: 210px;
     margin-bottom: 3px;
+    margin-right: 35px;
   }
   footer {
     height: 285px;
@@ -1060,17 +1100,30 @@ section#contact img {
     border-top: 1px solid rgb(109 114 120);
   }
   section#promote .section-content {
-    padding-top: 120px;
+    padding-top: 90px;
+    padding-left: 10px;
     height: 470px;
+  }
+  #img-app-shop {
+    position: relative;
+    top: -400px;
+    left: 450px;
+  }
+  #promote.lightgrey-background {
+    height: 600px;
   }
   section#promote .section-header {
     margin-bottom: 0;
+    margin-top: 40px;
+    padding-left: 15px;
     width: 352px;
   }
   section#promote img {
     width: 538px;
     height: 549px;
-    margin-left: -20px;
+  }
+  section#shop-join {
+    margin-left: -10px;
   }
   section#shop-join.common-section {
     display: flex;
@@ -1078,7 +1131,7 @@ section#contact img {
     justify-content: flex-start;
   }
   section#shop-join .common-section-half {
-    margin-left: 150px;
+    margin-left: 135px;
   }
   section#shop-join .section-header {
     margin-top: 155px;
@@ -1086,7 +1139,7 @@ section#contact img {
   section#shop-join img {
     width: 360px;
     height: 630px;
-    margin-top: 0;
+    margin-top: 65px;
     margin-bottom: 0;
   }
   section#shop-join .star-info {
@@ -1094,7 +1147,11 @@ section#contact img {
     height: 48px;
     font-size: 14px;
     color: rgb(109 114 120);
-    margin: 30px 0 0 7px;
+    margin: 30px 0 0 17px;
+  }
+  section#about-app {
+    height: 600px;
+    margin-left: 10px;
   }
   section#about-app .section-header {
     width: 100%;
@@ -1133,15 +1190,19 @@ section#contact img {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin-left: 0px;
   }
   section#realisation .section-header {
     width: 432px;
-    margin: 120px 77px -5px 0;
+    margin: 116px 77px -5px 10px;
   }
   .faq {
-    padding-top: 25px;
-    /* padding-bottom: -10px; */
-    height: 1252px;
+    padding-top: 48px;
+    margin-left: 0;
+    height: 1269px;
+  }
+  .faq .content-container {
+    margin-left: 30px;
   }
   .faq .faq-content {
     display: flex;
@@ -1167,6 +1228,9 @@ section#contact img {
     color: rgb(255 255 255);
     margin-top: 0;
     margin-bottom: 60px;
+  }
+  section#contact {
+    margin-left: 50px;
   }
   section#contact .section-header {
     margin-top: 65px;
@@ -1208,6 +1272,7 @@ section#contact img {
     width: 150px;
     height: 123px;
     margin-left: 50px;
+    margin-top: 19px;
   }
   .send-button {
     background-color: rgb(0 99 114);
@@ -1223,4 +1288,9 @@ section#contact img {
 }
 button {
   border: 1px solid transparent;
+}
+.center-container {
+  max-width: 1055px;
+  display: flex;
+  align-self: center;
 }

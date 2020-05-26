@@ -24,6 +24,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
     <link rel="manifest" href="assets/icons/manifest.json">
+    <script type="text/javascript" src="script.js"></script>
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -42,28 +43,48 @@
                 <a href="sklep.html"><button>DLA SKLEPÓW</button></a>
                 <a href="#">
                     <img id="fb" src="assets/images/fb.png"
-                        srcset="assets/images/fb2x.png 480w, assets/images/fb3x.png 800w, assets/images/fb.png 1200w"
+                        srcset="assets/images/fb@2x.png 480w, assets/images/fb@3x.png 800w, assets/images/fb.png 1200w"
                         alt="facebook">
                 </a>
             </div>
             <div id="hamburger">
-                <img src="assets/images/fb.png" />
+                <img src="assets/images/hamburger.png"
+                    srcset="assets/images/hamburger@2x.png 480w, assets/images/hamburger@3x.png 800w, assets/images/hamburger.png 1200w"
+                    alt="menu button" />
             </div>
         </div>
     </header>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-container">
+            <ul>
+                <li><a href="#">O NAS</a></li>
+                <li><a href="sklep.html">DLA SKLEPÓW</a></li>
+                <li><a href="https://facebook.com">FACEBOOK</a></li>
+            </ul>
+            <img src="assets/images/mobilemenuszop.png"
+                srcset="assets/images/mobilemenuszop@2x.png 480w, assets/images/mobilemenuszop@3x.png 800w, assets/images/mobilemenuszop.png 1200w"
+                alt="menu button" />
+        </div>
+        <div class="mobile-menu-hamburger-container" id="hamburger-mobile"> <img src="assets/images/hamburgero.png"
+                srcset="assets/images/hamburgero@2x.png 480w, assets/images/hamburgero@3x.png 800w, assets/images/hamburgero.png 1200w"
+                alt="menu button" /></div>
+    </div>
     <section class="lightgrey-background" id="app">
         <div class="section-container content-container">
             <div class="section-content">
-                <p class="section-header">Pobierz apkę z szopem,
+                <p class="section-header">Pobierz apkę z szopem,<br />
                     rób zakupy online,<br />
                     płać tyle co w sklepie.</p>
                 <p class="section-description">Bez dodatkowych opłat,<br />
                     a w dodatku - lokalnie.</p>
                 <button class="download-button">POBIERZ APLIKACJĘ</button>
             </div>
-            <img id="img-app" src="assets/images/flyingIPhoneXMockups.png"
-                srcset="assets/images/flyingIPhoneXMockups.png 480w, assets/images/flyingIPhoneXMockups@2x.png 800w, assets/images/flyingIPhoneXMockups@3x.png 1200w"
-                alt="aplikacja na iphone" />
+            <div class="flex-center">
+                <img id="img-app" src="assets/images/flyingIPhoneXMockups.png"
+                    srcset="assets/images/flyingIPhoneXMockups.png 480w, assets/images/flyingIPhoneXMockups@2x.png 800w, assets/images/flyingIPhoneXMockups@3x.png 1200w"
+                    alt="aplikacja na iphone" />
+            </div>
+
         </div>
     </section>
     <div class="content-container">
@@ -140,63 +161,100 @@
             </div>
         </section>
     </div>
-    <div class="lightgrey-background wide">
-        <section class="common-section content-container" id="asortiment">
-            <div class="common-section-small-part">
-                <p class="section-header">Cały lokalny asortyment</p>
-                <p class="section-description">Wszystkie produkty z Twoich sklepów
-                    na wysiągnięcie ręki!</p>
-                <button class="download-button">POBIERZ APLIKACJĘ</button>
-            </div>
-            <div class="common-section-big-half">
-                <img class="common-section-image" alt="lokalne sklepy" src="assets/images/asortiment.png"
-                    srcset="assets/images/asortiment.png 480w, assets/images/asortiment@2x.png 800w, assets/images/asortiment@3x.png 1200w" />
-            </div>
-        </section>
+    <div class="mobile-description lightgrey-background wide">
+        <div class="mobile-description-item" id="mobile-description-item-1">
+            <div class="section-header">Cały lokalny asortyment</div>
+            <div class="section-description">Wszystkie produkty z Twoich sklepów<br />
+                na wysiągnięcie ręki!</div>
+            <button class="download-button">POBIERZ APLIKACJĘ</button>
+            <img src="assets/images/mobiledescription1.png"
+                srcset="assets/images/mobiledescription1@.png 480w, assets/images/mobiledescription1@2x.png 800w, assets/images/mobiledescription1@3x.png 1200w"
+                alt="obrazek z instrukcją" />
+        </div>
+        <div class="mobile-description-item">
+            <div class="section-header">Cały lokalny asortyment</div>
+            <div class="section-description">Wszystkie produkty z Twoich sklepów<br />
+                na wysiągnięcie ręki!</div>
+            <img src="assets/images/mobiledescription1.png" id="mobile-description-img2"
+                srcset="assets/images/mobiledescription1@.png 480w, assets/images/mobiledescription1@2x.png 800w, assets/images/mobiledescription1@3x.png 1200w"
+                alt="obrazek z instrukcją" />
+        </div>
+        <div class="mobile-description-item">
+            <div class="section-header">Cały lokalny asortyment</div>
+            <div class="section-description">Wszystkie produkty z Twoich sklepów<br />
+                na wysiągnięcie ręki!</div>
+            <img src="assets/images/mobiledescription1.png" id="mobile-description-img3"
+                srcset="assets/images/mobiledescription1@.png 480w, assets/images/mobiledescription1@2x.png 800w, assets/images/mobiledescription1@3x.png 1200w"
+                alt="obrazek z instrukcją" />
+        </div>
+        <div class="mobile-description-item">
+            <div class="section-header">Cały lokalny asortyment</div>
+            <div class="section-description">Wszystkie produkty z Twoich sklepów<br />
+                na wysiągnięcie ręki!</div>
+            <img src="assets/images/mobiledescription1.png" id="mobile-description-img4"
+                srcset="assets/images/mobiledescription1@.png 480w, assets/images/mobiledescription1@2x.png 800w, assets/images/mobiledescription1@3x.png 1200w"
+                alt="obrazek z instrukcją" />
+        </div>
     </div>
-    <div class="wide">
-        <section class="common-section content-container">
-            <img class="common-section-half common-section-image" alt="lokalne sklepy"
-                src="assets/images/shoppinglist.png"
-                srcset="assets/images/shoppinglist.png 480w, assets/images/shoppinglist@2x.png 800w, assets/images/shoppinglist@3x.png 1200w" />
-            <div class="common-section-right-text">
-                <p class="section-header">Przeglądaj bazę 60 000
-                    produktów</p>
-                <p class="section-description">Sporządź listę zakupów wspólnie z bliskimi. Zrób zakupy sam lub zamów
-                    przez aplikację Szopuj bez dodatkowych opłat.</p>
-                <button class="download-button">POBIERZ APLIKACJĘ</button>
-            </div>
-        </section>
-    </div>
-    <div class="lightgrey-background wide">
-        <section class="common-section content-container" id="asortiment">
-            <div class="common-section-small-part">
-                <p class="section-header">Masa pomysłów na zdrowe
-                    i ciekawe dania</p>
-                <p class="section-description">Przepisy dla najbardziej wybrednych
-                    oraz na każdą okazję!</p>
-                <button class="download-button">POBIERZ APLIKACJĘ</button>
-            </div>
-            <div class="common-section-big-half">
-                <img class="common-section-image" alt="lokalne sklepy" src="assets/images/health.png"
-                    srcset="assets/images/health.png 480w, assets/images/health@2x.png 800w, assets/images/health@3x.png 1200w" />
-            </div>
-        </section>
-    </div>
-    <div class="wide">
-        <section class="common-section content-container" id="get-it">
-            <img class="common-section-half common-section-image" alt="lokalne sklepy" src="assets/images/fastget.png"
-                srcset="assets/images/fastget.png 480w, assets/images/fastget@2x.png 800w, assets/images/fastget@3x.png 1200w" />
-            <div class="common-section-right-text">
-                <p class="section-header">Odbiór na już!</p>
-                <p class="section-description">Wybierz produkty i zleć realizację na już! Powiadomimy cię kiedy
-                    zakupy będą spakowane i gotowe do odbioru.<br /> <br />Płacisz i wychodzisz - tak powinno być
-                    w
-                    każdym
-                    sklepie.</p>
-                <button class="download-button">POBIERZ APLIKACJĘ</button>
-            </div>
-        </section>
+    <div class="desktop-description">
+        <div class="lightgrey-background wide">
+            <section class="common-section content-container" id="asortiment">
+                <div class="common-section-small-part">
+                    <p class="section-header">Cały lokalny asortyment</p>
+                    <p class="section-description">Wszystkie produkty z Twoich sklepów
+                        na wysiągnięcie ręki!</p>
+                    <button class="download-button">POBIERZ APLIKACJĘ</button>
+                </div>
+                <div class="common-section-big-half">
+                    <img class="common-section-image" alt="lokalne sklepy" src="assets/images/asortiment.png"
+                        srcset="assets/images/asortiment.png 480w, assets/images/asortiment@2x.png 800w, assets/images/asortiment@3x.png 1200w" />
+                </div>
+            </section>
+        </div>
+        <div class="wide">
+            <section class="common-section content-container">
+                <img class="common-section-half common-section-image" alt="lokalne sklepy"
+                    src="assets/images/shoppinglist.png"
+                    srcset="assets/images/shoppinglist.png 480w, assets/images/shoppinglist@2x.png 800w, assets/images/shoppinglist@3x.png 1200w" />
+                <div class="common-section-right-text">
+                    <p class="section-header">Przeglądaj bazę 60 000
+                        produktów</p>
+                    <p class="section-description">Sporządź listę zakupów wspólnie z bliskimi. Zrób zakupy sam lub
+                        zamów
+                        przez aplikację Szopuj bez dodatkowych opłat.</p>
+                    <button class="download-button">POBIERZ APLIKACJĘ</button>
+                </div>
+            </section>
+        </div>
+        <div class="lightgrey-background wide">
+            <section class="common-section content-container" id="asortiment">
+                <div class="common-section-small-part">
+                    <p class="section-header">Masa pomysłów na zdrowe
+                        i ciekawe dania</p>
+                    <p class="section-description">Przepisy dla najbardziej wybrednych
+                        oraz na każdą okazję!</p>
+                    <button class="download-button">POBIERZ APLIKACJĘ</button>
+                </div>
+                <div class="common-section-big-half">
+                    <img class="common-section-image" alt="lokalne sklepy" src="assets/images/health.png"
+                        srcset="assets/images/health.png 480w, assets/images/health@2x.png 800w, assets/images/health@3x.png 1200w" />
+                </div>
+            </section>
+        </div>
+        <div class="wide">
+            <section class="common-section content-container" id="get-it">
+                <img class="common-section-half common-section-image" alt="lokalne sklepy"
+                    src="assets/images/fastget.png"
+                    srcset="assets/images/fastget.png 480w, assets/images/fastget@2x.png 800w, assets/images/fastget@3x.png 1200w" />
+                <div class="common-section-right-text">
+                    <p class="section-header">Odbiór na już!</p>
+                    <p class="section-description">Wybierz produkty i zleć realizację na już! Powiadomimy cię kiedy
+                        zakupy będą spakowane i gotowe do odbioru.<br /> <br />Płacisz i wychodzisz - tak powinno
+                        być <br />w każdym sklepie.</p>
+                    <button class="download-button">POBIERZ APLIKACJĘ</button>
+                </div>
+            </section>
+        </div>
     </div>
     <div class="wide green">
         <section class="newsletter-section content-container">

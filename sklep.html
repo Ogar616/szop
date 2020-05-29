@@ -25,13 +25,14 @@
     <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
     <link rel="manifest" href="assets/icons/manifest.json">
+    <script type="text/javascript" src="script.js"></script>
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 </head>
 
 <body class="main-container">
-    <header class="top-header lightgrey-background">
+    <header class="top-header lightgrey-background shops">
         <div class="header-container">
             <div class="header-left">
                 <a href="index.html"><img id="szop-logo" src="assets/images/menulogo.png"
@@ -47,7 +48,7 @@
                         alt="facebook">
                 </a>
             </div>
-            <div id="hamburger">
+            <div id="hamburger" class="shops">
                 <img src="assets/images/hamburger.png"
                     srcset="assets/images/hamburger@2x.png 480w, assets/images/hamburger@3x.png 800w, assets/images/hamburger.png 1200w"
                     alt="menu button" />
@@ -88,20 +89,86 @@
             </div>
         </section>
     </div>
-    <div class="wide">
-        <section class="common-section content-container" id="shop-join">
-            <img class="common-section-image" alt="lokalne sklepy" src="assets/images/shoppinglist.png"
-                srcset="assets/images/shoppinglist.png 480w, assets/images/shoppinglist@2x.png 800w, assets/images/shoppinglist@3x.png 1200w" />
-            <div class="common-section-half">
-                <p class="section-header">Dołącz za darmo</p>
-                <p class="section-description">Zero opłat za rejestrację.<br /><br />
-                    Zero opłat za pomoc przy rejestracji sklepu, wprowadzeniu asortymentu i twoich cen.<br /><br />
-                    Brak opłat w pierwszym miesiącu.<br /><br />
-                    Potem płacisz tylko 200 PLN + VAT miesięcznie.*</p>
-                <button class="download-button">SKONTAKTUJ SIĘ</button>
-                <p class="star-info">* Przedstawiona oferta cenowa ma charakter informacyjny i nie stanowi oferty
-                    handlowej<br />
-                    w rozumieniu Art.66 par.1 Kodeksu Cywilnego.</p>
+    <div class="content-container">
+        <section id="szop-join-free">
+            <p class="section-header">
+                Dołącz za darmo
+            </p>
+            <div class="carrousel">
+                <input type="radio" name="slides" id="radio-1">
+                <input type="radio" name="slides" id="radio-2">
+                <input type="radio" name="slides" id="radio-3" checked>
+                <ul class="slides">
+                    <li class="slide">
+                        <img src="assets/images/szop0zl.png"
+                            srcset="assets/images/szop0zl.png 480w, assets/images/szop0zl@2x.png 800w, assets/images/szop0zl@3x.png 1200w"
+                            alt="obrazek z instrukcją" id="how-it-works-img1-mobile" />
+                        <div class="number-container1">
+                            <div class="number" id="number1-mobile">1</div>
+                            <p class="dot-description">Zero opłat za rejestrację<br /> sklepu i wprowadzenie <br />
+                                Twojego asortymentu.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <img src="assets/images/szopX.png"
+                            srcset="assets/images/szopX.png 480w, assets/images/szopX@2x.png 800w, assets/images/szopX@3x.png 1200w"
+                            alt="obrazek z instrukcją" id="how-it-works-img2-mobile" />
+                        <div class="number-container2">
+                            <div class="number" id="number2-mobile">2</div>
+                            <p class="dot-description">Brak opłat w pierwszym <br />miesiącu.
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <img src="assets/images/szopNote.png"
+                            srcset="assets/images/szopNote.png 480w, assets/images/szopNote@2x.png 800w,assets/images/szopNote@3x.png 1200w"
+                            alt="obrazek z instrukcją" id="how-it-works-img3-mobile" />
+                        <div class="number-container3">
+                            <div class="number" id="number3-mobile">3</div>
+                            <p class="dot-description">Potem płacisz tylko<br /> 200 PLN + VAT miesięcznie*
+                        </div>
+                        <button class="download-button">SKONTAKTUJ SIĘ</button>
+                        <p class="star-info">* Przedstawiona oferta cenowa ma charakter informacyjny i nie stanowi
+                            oferty
+                            handlowej<br />
+                            w rozumieniu Art.66 par.1 Kodeksu Cywilnego.</p>
+                    </li>
+                </ul>
+                <div class="slidesNavigation">
+                    <label for="radio-1" id="dotForRadio-1"></label>
+                    <label for="radio-2" id="dotForRadio-2"></label>
+                    <label for="radio-3" id="dotForRadio-3"></label>
+                </div>
+            </div>
+            <div class="horizontal-images-container">
+                <img src="assets/images/szop0zl.png"
+                    srcset="assets/images/szop0zl.png 480w, assets/images/szop0zl@2x.png 800w, assets/images/szop0zl@3x.png 1200w"
+                    alt="obrazek z instrukcją" id="how-it-works-img1" />
+                <img src="assets/images/szopX.png"
+                    srcset="assets/images/szopX.png 480w, assets/images/szopX@2x.png 800w, assets/images/szopX@3x.png 1200w"
+                    alt="obrazek z instrukcją" id="how-it-works-img2" />
+                <img src="assets/images/szopNote.png"
+                    srcset="assets/images/szopNote.png 480w, assets/images/szopNote@2x.png 800w,assets/images/szopNote@3x.png 1200w"
+                    alt="obrazek z instrukcją" id="how-it-works-img3" />
+            </div>
+            <div class="numbers-container">
+                <div class="number-container1">
+                    <div class="number" id="number1">1</div>
+                    <p class="dot-description">Zero opłat za rejestrację sklepu i wprowadzenie Twojego asortymentu.</p>
+                </div>
+                <div class="number-container2">
+                    <div class="number" id="number2">2</div>
+                    <p class="dot-description">Brak opłat w pierwszym miesiącu.</p>
+                </div>
+                <div class="number-container3">
+                    <div class="number" id="number3">3</div>
+                    <p class="dot-description">Potem płacisz tylko <br />
+                        200 PLN + VAT miesięcznie*</p>
+                    <button class="download-button">SKONTAKTUJ SIĘ</button>
+                    <p class="star-info">* Przedstawiona oferta cenowa ma charakter informacyjny i nie stanowi oferty
+                        handlowej<br />
+                        w rozumieniu Art.66 par.1 Kodeksu Cywilnego.</p>
+                </div>
             </div>
         </section>
     </div>
@@ -150,7 +217,7 @@
         </section>
     </div>
     <div class="wide">
-        <section class="common-section content-container" id="realisation">
+        <section class="common-section content-container center-container" id="realisation">
             <div class="common-section-half">
                 <p class="section-header">Wygodna realizacja zamówienia i negocjacje z klientem</p>
                 <p class="section-description">Nowe zamówienia, te w realizacji <br />
@@ -201,7 +268,6 @@
                         wszystkich cen. Zwróć uwagę, aby ceny w aplikacji były identyczne z cenami w sklepie.
                     </p>
                 </div>
-
             </div>
         </section>
     </div>

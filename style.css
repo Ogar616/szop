@@ -17,6 +17,9 @@ p {
   flex-direction: column;
   overflow: hidden;
 }
+section {
+  padding: 0 10px;
+}
 .content-container {
   margin: 0 auto;
   width: 100%;
@@ -43,7 +46,7 @@ p {
 }
 .mobile-menu-container {
   position: fixed;
-  top: 73;
+  top: 73px;
   left: 0;
   width: 100vw;
   height: calc(100vh - 73px);
@@ -180,6 +183,7 @@ p {
 section#app {
   width: 100%;
   height: 662px;
+  margin-left: -10px;
 }
 section#app .section-header {
   margin-top: 37px;
@@ -476,81 +480,73 @@ section#join img {
   margin-bottom: 45px;
 }
 footer {
-  height: 285px;
+  display: none;
 }
-footer .contact-info,
-footer .copyright {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  letter-spacing: 0;
-}
-footer p {
-  font-size: 20px;
-  font-weight: 400;
-  margin-top: 51px;
-  margin-left: 5px;
-  color: rgb(109 114 120);
-  font-family: "Roboto";
-}
-footer a {
-  text-decoration: none;
-  color: rgb(109 114 120);
-  margin-left: 54px;
-}
-footer span {
-  display: block;
-  font-weight: normal;
-}
-footer .footer-email {
-  margin-left: 166px;
-  margin-right: 132px;
-}
-footer .copyright {
-  margin-top: 80px;
-  font-size: 16px;
-  font-weight: normal;
-  color: rgb(109 114 120);
-  font-family: "Roboto";
-}
+
 .with-border {
   border-top: 1px solid rgb(109 114 120);
 }
+.shops #szop-logo {
+  margin-top: 10px;
+}
+#hamburger.shops {
+  margin: 26px 30px 0 20px;
+}
+section#promote {
+  background-color: rgb(243 243 243);
+  height: 830px;
+}
 section#promote .section-content {
-  padding-top: 120px;
+  padding-top: 61px;
   height: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 section#promote .section-header {
-  margin-bottom: 0;
+  margin-bottom: 20px;
   width: 352px;
 }
-section#promote img {
-  width: 538px;
-  height: 549px;
-  margin-left: -20px;
+section#promote .section-description {
+  width: 322px;
 }
-section#shop-join.common-section {
+section#promote img {
+  width: 320px;
+  height: 347px;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+#szop-join-free {
+  height: 600px;
+  margin-top: 100px;
+}
+#szop-join-free ul {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
 }
-section#shop-join .common-section-half {
-  margin-left: 150px;
+#szop-join-free #how-it-works-img1-mobile {
+  width: 266px;
+  height: 208px;
 }
-section#shop-join .section-header {
-  margin-top: 155px;
-  margin-left: 10px;
+#szop-join-free #how-it-works-img2-mobile {
+  width: 170px;
+  height: 149px;
 }
-section#shop-join img {
-  width: 360px;
-  height: 630px;
+#szop-join-free #how-it-works-img3-mobile {
+  width: 180px;
+  height: 146.2px;
 }
-section#shop-join .star-info {
-  width: 312px;
-  height: 48px;
+#szop-join-free .download-button {
+  margin-top: 15px;
+}
+#szop-join-free .star-info {
   font-size: 14px;
   color: rgb(109 114 120);
-  margin: 30px 0 0 7px;
+  width: 312px;
+  margin-left: 5px;
+}
+#szop-join-free .slidesNavigation {
+  margin-top: 10px;
 }
 section#about-app .section-header {
   width: 100%;
@@ -587,48 +583,59 @@ section#about-app img {
 section#realisation {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+section#realisation img {
+  display: none;
 }
 section#realisation .section-header {
-  width: 432px;
-  margin: 120px 77px -5px 0;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+section#realisation .section-description {
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+section#realisation .download-button {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 .faq {
   padding-top: 25px;
-  height: 1252px;
+  height: auto;
 }
 .faq .faq-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 1252px;
-}
-.faq .main-header {
-  width: 350px;
+  height: auto;
 }
 .faq .center {
-  width: 628px;
-  margin-left: 160px;
-  margin-bottom: -20px;
+  width: 100%;
 }
-.faq .center .section-header {
-  width: 628px;
-  margin-top: -10px;
+.faq .section-header {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
+.faq .main-header {
+  margin-top: 30px;
+}
 .faq .center .section-description {
-  width: 541px;
   color: rgb(255 255 255);
   margin-top: 0;
   margin-bottom: 60px;
+  padding: 0;
 }
 section#contact .section-header {
-  margin-top: 65px;
+  margin-top: 45px;
   margin-bottom: 0;
 }
 section#contact .section-description {
-  width: 486px;
   margin-bottom: 29px;
+  padding: 0;
 }
 section#contact .email-input,
 textarea {
@@ -637,15 +644,17 @@ textarea {
 section#contact .email-input,
 textarea,
 .send-button {
-  margin-left: 5px;
+  margin: 0 auto;
 }
 .text-area {
-  width: 590px;
   height: 128px;
-  margin-top: 20px;
   padding: 16px;
   padding-top: 10px;
   font-size: 16px;
+  margin-top: 20px;
+  width: 320px;
+  display: flex;
+  align-self: center;
 }
 
 .text-area::placeholder {
@@ -653,15 +662,8 @@ textarea,
   letter-spacing: 0;
   margin-left: 16px;
 }
-.text-area-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 section#contact img {
-  width: 150px;
-  height: 123px;
-  margin-left: 50px;
+  display: none;
 }
 .send-button {
   background-color: rgb(0 99 114);
@@ -707,7 +709,6 @@ section#contact img {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* margin-right: 95px; */
   }
   .top-header #szop-logo {
     width: 179px;
@@ -762,6 +763,7 @@ section#contact img {
   section#app {
     width: 100%;
     height: 588px;
+    margin-left: 0;
   }
   .content-container {
     display: flex;
@@ -1066,10 +1068,10 @@ section#contact img {
     letter-spacing: 0;
   }
   footer p {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     margin-top: 51px;
-    margin-left: 19px;
+    margin-left: 0px;
     color: rgb(109 114 120);
     font-family: "Roboto";
   }
@@ -1086,11 +1088,11 @@ section#contact img {
     font-weight: normal;
   }
   footer .footer-email {
-    margin-left: 166px;
-    margin-right: 132px;
+    margin-left: 196px;
+    margin-right: 162px;
   }
   footer .copyright {
-    margin-top: 80px;
+    margin-top: 55px;
     font-size: 16px;
     font-weight: normal;
     color: rgb(109 114 120);
@@ -1101,8 +1103,11 @@ section#contact img {
   }
   section#promote .section-content {
     padding-top: 90px;
-    padding-left: 10px;
     height: 470px;
+    display: inline-block;
+  }
+  section#promote .section-description {
+    padding: 0;
   }
   #img-app-shop {
     position: relative;
@@ -1114,44 +1119,60 @@ section#contact img {
   }
   section#promote .section-header {
     margin-bottom: 0;
-    margin-top: 40px;
-    padding-left: 15px;
+    margin-top: 65px;
     width: 352px;
   }
-  section#promote img {
+  section#promote #img-app-shop {
     width: 538px;
     height: 549px;
-  }
-  section#shop-join {
-    margin-left: -10px;
+    margin-left: -35px;
+    margin-top: 0px;
   }
   section#shop-join.common-section {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
   }
-  section#shop-join .common-section-half {
-    margin-left: 135px;
+  #szop-join-free {
+    height: 700px;
   }
-  section#shop-join .section-header {
-    margin-top: 155px;
+  #szop-join-free .section-header {
+    margin-top: -10px;
   }
-  section#shop-join img {
-    width: 360px;
-    height: 630px;
-    margin-top: 65px;
-    margin-bottom: 0;
+  #szop-join-free #how-it-works-img1 {
+    width: 266px;
+    height: 208px;
+    margin-top: 50px;
+    margin-left: 5px;
   }
-  section#shop-join .star-info {
-    width: 312px;
-    height: 48px;
+  #szop-join-free #how-it-works-img2 {
+    width: 170px;
+    height: 149px;
+    margin-top: 85px;
+    margin-left: 130px;
+  }
+  #szop-join-free #how-it-works-img3 {
+    width: 180px;
+    height: 146.2px;
+    margin-top: 80px;
+    margin-left: -25px;
+  }
+  #szop-join-free .dot-description {
+    font-size: 20px;
+  }
+  #szop-join-free .download-button {
+    margin-top: 60px;
+    margin-right: 10px;
+  }
+  #szop-join-free .star-info {
     font-size: 14px;
     color: rgb(109 114 120);
-    margin: 30px 0 0 17px;
+    width: 312px;
+    margin-left: 27px;
+    margin-top: 20px;
   }
   section#about-app {
     height: 600px;
-    margin-left: 10px;
   }
   section#about-app .section-header {
     width: 100%;
@@ -1188,21 +1209,25 @@ section#contact img {
   }
   section#realisation {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-left: 0px;
+    justify-content: flex-start !important;
+  }
+  section#realisation img {
+    display: inline-block;
   }
   section#realisation .section-header {
     width: 432px;
-    margin: 116px 77px -5px 10px;
+    margin: 116px 77px 23px 0px;
+  }
+  section#realisation .section-description {
+    margin: 0;
+  }
+  section#realisation .download-button {
+    margin: 0;
+    margin-top: 45px;
   }
   .faq {
     padding-top: 48px;
-    margin-left: 0;
     height: 1269px;
-  }
-  .faq .content-container {
-    margin-left: 30px;
   }
   .faq .faq-content {
     display: flex;
@@ -1217,6 +1242,7 @@ section#contact img {
     width: 628px;
     margin-left: 160px;
     margin-bottom: -20px;
+    margin-top: 22px;
   }
   .faq .center .section-header {
     width: 628px;
@@ -1228,9 +1254,6 @@ section#contact img {
     color: rgb(255 255 255);
     margin-top: 0;
     margin-bottom: 60px;
-  }
-  section#contact {
-    margin-left: 50px;
   }
   section#contact .section-header {
     margin-top: 65px;
@@ -1269,9 +1292,10 @@ section#contact img {
     align-items: center;
   }
   section#contact img {
+    display: inline-block;
     width: 150px;
     height: 123px;
-    margin-left: 50px;
+    margin-right: 230px;
     margin-top: 19px;
   }
   .send-button {

@@ -239,7 +239,7 @@ section#app .section-description {
   text-align: center;
   width: 375px;
   padding: 0 15px;
-  margin-bottom: -30px;
+  margin-bottom: -75px;
 }
 .mobile-description .mobile-description-item .download-button {
   margin-bottom: 71px;
@@ -524,9 +524,16 @@ section#promote img {
   display: flex;
   flex-direction: row;
 }
+#szop-join-free .number-container2 .dot-description {
+  margin-left: 5px;
+}
+#szop-join-free .number-container3 .dot-description {
+  margin-left: -10px;
+}
 #szop-join-free #how-it-works-img1-mobile {
   width: 266px;
   height: 208px;
+  margin-left: 50px;
 }
 #szop-join-free #how-it-works-img2-mobile {
   width: 170px;
@@ -538,15 +545,18 @@ section#promote img {
 }
 #szop-join-free .download-button {
   margin-top: 15px;
+  margin-left: -20px;
 }
 #szop-join-free .star-info {
   font-size: 14px;
   color: rgb(109 114 120);
   width: 312px;
-  margin-left: 5px;
+  margin-left: -15px;
 }
 #szop-join-free .slidesNavigation {
-  margin-top: 10px;
+  margin-top: 20px;
+  position: absolute;
+  left: 48%;
 }
 section#about-app .section-header {
   width: 100%;
@@ -1162,13 +1172,17 @@ section#contact img {
   }
   #szop-join-free .download-button {
     margin-top: 60px;
-    margin-right: 10px;
+    margin-left: -20px;
   }
+  #szop-join-free .number-container3 .dot-description {
+    margin-left: 15px;
+  }
+
   #szop-join-free .star-info {
     font-size: 14px;
     color: rgb(109 114 120);
     width: 312px;
-    margin-left: 27px;
+    margin-left: 25px;
     margin-top: 20px;
   }
   section#about-app {

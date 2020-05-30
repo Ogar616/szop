@@ -260,7 +260,6 @@ section#app .flex-center {
   margin-bottom: 20px;
   margin-left: -10px;
 }
-
 .mobile-description .section-description {
   padding-left: 0;
 }
@@ -291,7 +290,6 @@ section#app .flex-center {
 #mobile-description-img4 {
   margin-top: 112px;
 }
-
 section#how-it-works {
   position: relative;
   top: 38px;
@@ -501,7 +499,6 @@ section#join button {
   font-size: 14px;
   letter-spacing: 0.5px;
 }
-
 section#join img {
   width: 200px;
   height: 175px;
@@ -597,7 +594,6 @@ section#promote img {
   position: absolute;
   left: 48%;
 }
-
 section#about-app .section-header {
   width: 100%;
   margin-top: 70px;
@@ -706,7 +702,6 @@ textarea,
   display: flex;
   align-self: center;
 }
-
 .text-area::placeholder {
   font-size: 16px;
   letter-spacing: 0;
@@ -726,7 +721,6 @@ section#contact img {
   margin-top: 20px;
   margin-bottom: 50px;
 }
-
 @media (min-width: 900px) {
   .main-container {
     margin-right: -50px;
@@ -1111,7 +1105,6 @@ section#contact img {
     letter-spacing: 0.5px;
     margin-right: 28px;
   }
-
   section#join img {
     width: 240px;
     height: 210px;
@@ -1231,7 +1224,6 @@ section#contact img {
   #szop-join-free .number-container3 .dot-description {
     margin-left: 15px;
   }
-
   #szop-join-free .star-info {
     font-size: 14px;
     color: rgb(109 114 120);
@@ -1348,7 +1340,6 @@ section#contact img {
     padding-top: 10px;
     font-size: 16px;
   }
-
   .text-area::placeholder {
     font-size: 16px;
     letter-spacing: 0;

@@ -136,7 +136,7 @@ section {
   max-width: 179px;
 }
 #hamburger {
-  margin: 6px 30px 0 20px;
+  margin: 10px 30px 0 20px;
 }
 #hamburger img {
   width: 20px;
@@ -146,6 +146,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 1px;
 }
 .header-right {
   display: none;
@@ -154,7 +155,7 @@ section {
   width: 100px;
   height: 33.7px;
   margin-left: 20px;
-  margin-top: -5px;
+  margin-top: 3px;
 }
 .header-right #fb {
   width: 30px;
@@ -482,12 +483,14 @@ section#join img {
 footer {
   display: none;
 }
-
+.shops #fb {
+  margin-top: 5px;
+}
 .with-border {
   border-top: 1px solid rgb(109 114 120);
 }
 .shops #szop-logo {
-  margin-top: 10px;
+  margin-top: 7px;
 }
 #hamburger.shops {
   margin: 26px 30px 0 20px;
@@ -815,7 +818,7 @@ section#contact img {
     margin-left: 5px;
   }
   section#app .section-description {
-    padding-left: 10px;
+    padding-left: 0;
   }
   #img-app {
     position: relative;

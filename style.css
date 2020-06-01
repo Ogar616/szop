@@ -251,7 +251,7 @@ section#app .flex-center {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding: 54px 0 0 5px;
+  padding: 40px 0 0 5px;
   overflow-x: scroll;
   overflow-y: hidden;
   height: 625px;
@@ -267,7 +267,9 @@ section#app .flex-center {
   text-align: center;
   width: 375px;
   padding: 0 15px;
-  margin-bottom: -75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .mobile-description .mobile-description-item .download-buttons {
   margin-bottom: 71px;
@@ -276,19 +278,26 @@ section#app .flex-center {
   width: 200px;
   padding: 0 87px;
 }
-.mobile-description-item:nth-of-type(2) .section-header,
-.mobile-description-item:nth-of-type(3) .section-header,
+.mobile-description-item:nth-of-type(2) {
+  padding-top: -20px;
+}
+.mobile-description-item:nth-of-type(2) .section-description {
+  margin-bottom: 70px;
+}
+.mobile-description-item:nth-of-type(3) .section-header {
+  margin-bottom: 20px;
+}
+.mobile-description-item:nth-of-type(3) .section-description {
+  margin-bottom: 119px;
+}
 .mobile-description-item:nth-of-type(4) .section-header {
-  margin-top: -70px;
+  margin-bottom: 20px;
+}
+.mobile-description-item:nth-of-type(4) .section-description {
+  margin-bottom: 74px;
 }
 #mobile-description-item-1 {
   padding-left: 0;
-  margin-top: -75px;
-}
-#mobile-description-img2,
-#mobile-description-img3,
-#mobile-description-img4 {
-  margin-top: 112px;
 }
 section#how-it-works {
   position: relative;
@@ -628,12 +637,14 @@ section#about-app img {
 }
 section#realisation {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  width: 100%;
 }
 section#realisation img {
-  display: none;
+  width: 250px;
+  height: 386px;
+  display: flex;
+  align-self: center;
 }
 section#realisation .section-header {
   margin: 0 auto;
@@ -650,7 +661,7 @@ section#realisation .download-button {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 0;
 }
 .faq {
   padding-top: 25px;
@@ -1171,8 +1182,11 @@ section#contact img {
     top: -400px;
     left: 450px;
   }
-  #promote.lightgrey-background {
+  section#promote.lightgrey-background {
     height: 600px;
+  }
+  section#promote .download-button {
+    width: 200px;
   }
   section#promote .section-header {
     margin-bottom: 0;
@@ -1219,7 +1233,8 @@ section#contact img {
   }
   #szop-join-free .download-button {
     margin-top: 60px;
-    margin-left: -20px;
+    margin-left: 0;
+    width: 200px;
   }
   #szop-join-free .number-container3 .dot-description {
     margin-left: 15px;
@@ -1269,10 +1284,8 @@ section#contact img {
   }
   section#realisation {
     display: flex;
-    justify-content: flex-start !important;
-  }
-  section#realisation img {
-    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
   }
   section#realisation .section-header {
     width: 432px;
@@ -1284,6 +1297,11 @@ section#contact img {
   section#realisation .download-button {
     margin: 0;
     margin-top: 45px;
+    width: 200px;
+  }
+  section#realisation img {
+    width: 360px;
+    height: 530px;
   }
   .faq {
     padding-top: 48px;

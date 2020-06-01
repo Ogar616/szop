@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementsByClassName('slide')[0].addEventListener('click', clickSlide1)
     document.getElementsByClassName('slide')[1].addEventListener('click', clickSlide2)
     document.getElementsByClassName('slide')[2].addEventListener('click', clickSlide3)
+    document.getElementsByClassName('slide')[0].addEventListener('touchmove', clickSlide1)
+    document.getElementsByClassName('slide')[1].addEventListener('touchmove', clickSlide2)
+    document.getElementsByClassName('slide')[2].addEventListener('touchmove', clickSlide3)
   })
 
 var showMobileMenu = function() {

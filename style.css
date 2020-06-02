@@ -50,16 +50,18 @@ section {
   margin: 0 auto;
   border-radius: 20px;
 }
-.download-buttons button {
+.download-buttons a {
   height: 36px;
   background-color: rgb(26 199 79);
-  width: 80px !important;
+  width: 85px !important;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
   margin-right: 10px;
+  text-decoration: none;
+  color: black;
 }
 .download-buttons img {
   max-width: 10px !important;
@@ -663,6 +665,64 @@ section#realisation .download-button {
   justify-content: center;
   margin-bottom: 0;
 }
+section.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.left img {
+  width: 250px;
+  height: 386px;
+  display: flex;
+  align-self: center;
+}
+section.left .section-header {
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+section.left .section-description {
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+section.left .download-button {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+section.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.right img {
+  width: 250px;
+  height: 386px;
+  display: flex;
+  align-self: center;
+}
+section.right .section-header {
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+section.right .section-description {
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+section.right .download-button {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
 .faq {
   padding-top: 25px;
   height: auto;
@@ -750,10 +810,12 @@ section#contact img {
     width: 100%;
     height: 85px;
     padding-top: 5px;
-    margin-left: 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+  section {
+    padding: 0;
   }
   .section-content {
     padding-top: 170px;
@@ -850,6 +912,8 @@ section#contact img {
     margin-bottom: 48px;
     padding: 0 15px;
     color: rgb(109 114 120);
+    display: flex;
+    align-self: flex-start;
   }
   .download-buttons {
     border-radius: 18px;
@@ -971,7 +1035,6 @@ section#contact img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 15px;
   }
   .common-section-small-part .section-header {
     margin-top: 215px;
@@ -985,9 +1048,6 @@ section#contact img {
   .common-section-big-half .common-section-image {
     margin-right: 30px;
   }
-  .common-section .download-button {
-    margin-left: 13px;
-  }
   .common-section-right-text {
     margin-left: 135px;
     margin-top: -50px;
@@ -996,13 +1056,12 @@ section#contact img {
     margin-bottom: 70px;
     padding-left: 8px;
   }
-  .common-section-right-text .download-button {
-    margin-left: 5px;
-  }
   .common-section-image {
     width: 360px;
     height: 530px;
     margin-top: 70px;
+  }
+  .left .common-section-image {
     margin-left: 12px;
   }
   section#asortiment {
@@ -1285,7 +1344,7 @@ section#contact img {
   section#realisation {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
   }
   section#realisation .section-header {
     width: 432px;
@@ -1302,6 +1361,57 @@ section#contact img {
   section#realisation img {
     width: 360px;
     height: 530px;
+    margin-left: 20px;
+  }
+  section.left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  section.left .common-section-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  section.left .section-header {
+    width: 432px;
+    margin: 206px 70px 23px 0px;
+  }
+  section.left .section-description {
+    margin: 0 0 43px 0;
+  }
+  section.left .download-button {
+    margin: 0;
+    margin-top: 45px;
+    width: 200px;
+  }
+  section.left img {
+    width: 360px;
+    height: 530px;
+  }
+  section.right {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  section.right .section-header {
+    max-width: 432px;
+    margin: 160px 0 23px 0;
+  }
+  section.right .section-description {
+    margin: 0 0 50px 0;
+  }
+  section.right img {
+    width: 360px;
+    height: 530px;
+    margin-right: 150px;
+  }
+  section.right a img {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
   }
   .faq {
     padding-top: 48px;
